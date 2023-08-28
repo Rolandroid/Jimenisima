@@ -1,0 +1,45 @@
+.jimenisimaHeader{
+    display: flex;
+    justify-content: space-between;
+}
+.userIngressDiv{
+    display: flex;
+}
+.userIngressOptionsDiv{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}.GoogleAuthImgContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GoogleAuthContent {
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.GoogleAuthRoute {font-size: xx-small;}
+
+.userDefaultImg {
+    border: 1px solid gray;
+    width: 80px;
+    border-radius: 40px;
+}
+.GoogleAuthContentPath{}
+.loginPath{}
+.loginText{
+}
+.registerText{
+    font-size: small;
+}
+.registerPath{}
+.logoImg{}
+.HomePath{}
+.logoImg{width: 80px;}
