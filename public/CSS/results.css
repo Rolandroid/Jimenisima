@@ -1,0 +1,50 @@
+.resultsContainer{}
+.searchesList{
+    padding: 6px;
+    display: flex;
+    gap: 5px;
+}
+.searchesItem{
+    display: flex;
+    gap: 12px;
+    border-radius: 20px;
+    background-color: yellow;
+    padding: 2px 6px;
+    font-size: small;
+}
+.searchesTerm{}
+.searchesTermDelete{
+    background-color: yellow;
+}
+.resultsList{
+    display: flex;
+    padding: 6px;
+}
+.productCard{
+    display: flex;
+    gap: 6px;
+    padding: 6px;
+    width: 120px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(144.31deg, #FF9580 7.98%, rgba(255, 214, 228, 0) 50.02%, #FF9580 96.2%);
+}
+.imageContainer{
+    width: 100px;
+    height: 100px;
+}
+
+.productImage{width: inherit;}
+.productName{
+    font-size: small;
+}
+.productprice{
+    font-size: large;
+}
+.addToCartButton{
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: yellow;
+}

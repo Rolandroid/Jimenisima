@@ -1,4 +1,6 @@
 .jimenisimaHeader{
+    padding: 6px;
+    background-color: yellow;
     display: flex;
     justify-content: space-between;
 }
@@ -6,10 +8,10 @@
     display: flex;
 }
 .userIngressOptionsDiv{
-    width: 120px;
+    padding-top: 12px;
+    width: 130px;
     display: flex;
     flex-direction: column;
-    align-content: center;
     align-items: center;
 }.GoogleAuthImgContainer {
     position: relative;
@@ -35,6 +37,7 @@
 .GoogleAuthContentPath{}
 .loginPath{}
 .loginText{
+    font-size: large;
 }
 .registerText{
     font-size: small;
