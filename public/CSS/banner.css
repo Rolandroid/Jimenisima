@@ -1,0 +1,12 @@
+.divBanner{
+    display: flex;
+    background-color: hotpink;
+}
+.divBannerText{}
+.divBannerTextSpan{
+    font-size: larger;
+    align-content: center;
+}
+.divBannerTextP{}
+
+.DivBannerIcon{font-size: -webkit-xxx-large;}
