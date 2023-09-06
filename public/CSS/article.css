@@ -1,0 +1,28 @@
+.productCard{
+    display: flex;
+    gap: 6px;
+    padding: 6px;
+    width: 120px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(150deg, var(--secundary-color) 10%, white 50%, var(--secundary-color) 90%);
+}
+.imageContainer{
+    width: 100px;
+    height: 100px;
+}
+
+.productImage{width: inherit;}
+.productName{
+    font-size: small;
+}
+.productprice{
+    font-size: large;
+}
+.addToCartButton{
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: var(--primary-color);
+}

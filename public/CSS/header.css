@@ -1,6 +1,6 @@
 .jimenisimaHeader{
     padding: 6px;
-    background-color: hotpink;
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
 }

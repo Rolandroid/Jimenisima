@@ -1,0 +1,9 @@
+.highlightContainer{
+    /* margin: 6px 0px 0px 0px; */
+}
+
+.highlightTitle{
+    background-color: var(--secundary-color);
+    padding: 6px;
+    font-size: larger;
+}

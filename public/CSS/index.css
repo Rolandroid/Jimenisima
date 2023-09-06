@@ -1,5 +1,9 @@
 @import "./general.css";
+@import "./variables.css";
 @import "./header.css";
 @import "./navbar.css";
+@import "./article.css";
 @import "./results.css";
 @import "./banner.css";
+@import "./highlight.css";
+@import "./footer.css";

@@ -4,9 +4,9 @@
         <li class="searchesItem"><p class="searchesTerm">pokemon</p><button class="searchesTermDelete">x</button></li> 
         <li class="searchesItem"><p class="searchesTerm">criminal</p><button class="searchesTermDelete">x</button></li> 
     </ul>
-    <ul class="resultsList">
-        <%- include('article') %>
-        <%- include('article') %>
-        <%- include('article') %>
-    </ul>
+    <div class="resultsList">
+        <% products.forEach(element => { %>
+            <%- include('article',{element}) %>         
+        <% }) %>
+    </div>
 </div>

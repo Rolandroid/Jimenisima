@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:black;
+    color : var(--font-color);
     text-decoration: none;
     list-style: none;
 }

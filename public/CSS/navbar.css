@@ -6,12 +6,13 @@
     gap: 6px;
     padding: 6px;
 }
+.categoriesListRibbon{align-self: stretch;}
 .categoriesList{
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+    gap: 6px;
     /* overflow-x: scroll; */
-    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 /* .categoriesList::-webkit-scrollbar {
     width: 0px;
@@ -19,25 +20,27 @@
     padding: 0px;
 }  */
 .categorieItem{
-    background-color: pink;
+    /* text-align: center; */
+    background-color: var(--secundary-color);
     padding: 2px;
+    gap: 6px;
     font-size: large;
 }
-.searchForm{
-}
+.searchForm{display: flex;gap: 6px;}
 .formInput{
     border-radius: 40px;
-    background-color: hotpink;
+    background-color: var(--primary-color);
     padding: 2px 6px;
     font-size: large;
     width: 97px;
 }
 .formInput{
     font-size: large;
+    width: 200px;
 }
 .formButton{
     width: 26px;
     height: 26px;
     border-radius: 13px;
-    background-color: hotpink;
+    background-color: var(--primary-color);
 }

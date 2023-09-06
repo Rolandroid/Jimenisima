@@ -1,0 +1,19 @@
+ [
+      {
+        "name": "stiquer1",
+        "price": 300,
+        "tag":["etiqueta1", "etiqueta2", "etiqueta3"],
+        "category":"Stickers"
+      },{
+        "name": "stiquer2",
+        "price": 300,
+        "tag":["etiqueta2", "etiqueta3", "etiqueta4"],
+        "category":"Stickers"
+      },
+      {
+        "name": "stiquer3",
+        "price": 300,
+        "tag":["etiqueta5", "etiqueta6", "etiqueta7"],
+        "category":"Stickers"
+      }
+    ]

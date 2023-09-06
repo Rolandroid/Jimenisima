@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <%- include('./partials/head',{title : 'Jimenisima' }) %>
+  <%- include('./partials/head') %>
   <body>
     <%- include('./partials/header') %>
     <%- include('./partials/navbar') %>
-    <%- include('./partials/results') %>
+    <%- include('./partials/results', {products}) %>
     <%- include('./partials/banner') %>
-
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+    <%- include('./partials/highlight') %>
+    <%- include('./partials/footer') %>
