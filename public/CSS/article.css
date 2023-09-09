@@ -9,11 +9,16 @@
     background: linear-gradient(150deg, var(--secundary-color) 10%, white 50%, var(--secundary-color) 90%);
 }
 .imageContainer{
+    display: flex;
+    overflow: hidden;
     width: 100px;
     height: 100px;
+    /* align-items: center; */
+    /* flex-wrap: nowrap; */
+    justify-content: center;
 }
 
-.productImage{width: inherit;}
+.productImage{/* width: inherit; *//* margin: auto; *//* width: fit-content; */}
 .productName{
     font-size: small;
 }

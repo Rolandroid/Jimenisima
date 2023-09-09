@@ -3,6 +3,18 @@ const {getAllProducts} = require("../services")
 module.exports = {
   index: (req, res) => {
     const products = getAllProducts()
+    const indexPackage =[
+      {
+      results : products
+      },
+      {
+        name : "highlight",
+        price : 100000,
+        tags : ["tag1", "tag2", "tag3"],
+        category : "category"
+
+      }]
+      console.log(indexPackage[0].results)
     return res.render('index', {products})
   }
 }

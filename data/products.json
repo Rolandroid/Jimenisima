@@ -1,17 +1,19 @@
  [
       {
-        "name": "stiquer1",
+        "photo":"thisIsFine.png",
+        "name": "thisIsFine",
         "price": 300,
         "tag":["etiqueta1", "etiqueta2", "etiqueta3"],
         "category":"Stickers"
       },{
-        "name": "stiquer2",
+        "photo":"CriminalGirl.png",
+        "name": "CriminalGirl",
         "price": 300,
         "tag":["etiqueta2", "etiqueta3", "etiqueta4"],
         "category":"Stickers"
       },
-      {
-        "name": "stiquer3",
+      { "photo":"Charizard.png",
+        "name": "Charizard",
         "price": 300,
         "tag":["etiqueta5", "etiqueta6", "etiqueta7"],
         "category":"Stickers"

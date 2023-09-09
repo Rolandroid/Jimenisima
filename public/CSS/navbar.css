@@ -4,14 +4,17 @@
     flex-direction: column;
     /* padding: 6px; */
     gap: 6px;
-    padding: 6px;
+    /* padding: 6px; */
 }
 .categoriesListRibbon{align-self: stretch;}
 .categoriesList{
+    width: 100vw;
+    background-color: var(--secundary-color);
     display: flex;
     gap: 6px;
     /* overflow-x: scroll; */
     flex-direction: row;
+    padding: 6px;
     flex-wrap: wrap;
 }
 /* .categoriesList::-webkit-scrollbar {
@@ -24,9 +27,9 @@
     background-color: var(--secundary-color);
     padding: 2px;
     gap: 6px;
-    font-size: large;
+    font-size: larger;
 }
-.searchForm{display: flex;gap: 6px;}
+.searchForm{display: flex;gap: 6px;padding: 6px;}
 .formInput{
     border-radius: 40px;
     background-color: var(--primary-color);
