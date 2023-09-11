@@ -1,4 +1,6 @@
-.resultsContainer{}
+.resultsContainer{
+    background-color: #202124;
+}
 .searchesList{
     padding: 6px;
     display: flex;
