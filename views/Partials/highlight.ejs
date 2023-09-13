@@ -1,8 +1,9 @@
 <div class="highlightContainer">
     <p class="highlightTitle">Recomendaciones <i class="fa-regular fa-face-smile-wink"></i> <i class="fa-regular fa-heart"></i> <i class="fa-solid fa-fire"></i></p>
     <ul class="resultsList">
-        <% products.forEach(element => { %>
-            <%- include('article',{element}) %>         
+        <% recommended.forEach(element => { %>
+         <li><%- include('./article',{element : element}) %></li>
         <% }) %>
+        
     </ul>
 </div>

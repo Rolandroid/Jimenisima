@@ -1,10 +1,9 @@
 <nav class="jimenisimaNavbar">
     <div class ="categoriesListRibbon">
         <ul class="categoriesList">
-            <li class="categorieItem"><a href="">Stickers</a> </li>
-            <li class="categorieItem"><a href="">Buzos</a> </li>
-            <li class="categorieItem"><a href="">Hologramas</a> </li>
-            <li class="categorieItem"><a href="">Posters</a> </li>
+            <%  for( let i = 0; i < categoriesList.length; i++ ) { %>
+                <li class="categorieItem"><%= categoriesList[i] %></li>
+            <% } %>
         </ul>
     </div>
     <form class="searchForm" name="searchForm">

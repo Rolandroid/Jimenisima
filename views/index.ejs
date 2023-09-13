@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+  <% let {categoriesList,recommended} = indexView %>
+
   <%- include('./partials/head') %>
   <body>
-    <%- include('./partials/header') %>
-    <%- include('./partials/navbar') %>
-    <%- include('./partials/results', {products}) %>
-    <%- include('./partials/banner') %>
-    <%- include('./partials/highlight', {products}) %>
-    <%- include('./partials/footer') %>
+    <%- include('./partials/header',) %>
+    <%- include('./partials/navbar', {categoriesList : categoriesList}) %>
+    <%- include('./partials/banner',) %>
+    <%- include('./partials/highlight',{recommended : recommended}) %>
+    <%- include('./partials/footer',) %>
   </body>

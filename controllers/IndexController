@@ -1,20 +1,22 @@
-const {getAllProducts} = require("../services")
+const {getAllProducts, getIndexView} = require("../services")
 
 module.exports = {
-  index: (req, res) => {
-    const products = getAllProducts()
-    const indexPackage =[
-      {
-      results : products
-      },
-      {
-        name : "highlight",
-        price : 100000,
-        tags : ["tag1", "tag2", "tag3"],
-        category : "category"
+  index: async (req, res) => {
+    try {
+      const products = getAllProducts();
+      const indexView = await getIndexView();
 
-      }]
-      console.log(indexPackage[0].results)
-    return res.render('index', {products})
+      return res.render('index', { indexView: indexView });
+    } catch (error) {
+      // Manejar errores si ocurren al obtener la vista del índice
+      console.error("Error al obtener la vista del índice:", error);
+      res.status(500).send("Error interno del servidor");
+    }
+  },
+  dashboard : (req, res) => {
+    let indexView = getIndexView()
+    console.log("indexController check")
+   
+    return res.render('dashboard', {})
   }
 }

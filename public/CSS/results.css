@@ -1,5 +1,5 @@
 .resultsContainer{
-    background-color: #202124;
+    background-color: var(--background-color);
 }
 .searchesList{
     padding: 6px;
@@ -10,12 +10,12 @@
     display: flex;
     gap: 12px;
     border-radius: 20px;
-    background-color: var(--primary-color);
+    background-color: var(--secundary-color);
     padding: 2px 6px;
     font-size: small;
 }
 .searchesTerm{}
-.searchesTermDelete{background-color: var(--primary-color);}
+.searchesTermDelete{background-color: var(--secundary-color);}
 .resultsList{
     display: flex;
     padding: 6px;

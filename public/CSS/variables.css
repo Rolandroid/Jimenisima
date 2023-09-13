@@ -1,8 +1,8 @@
 :root {
-    --primary-color: pink;
-    --secundary-color: hotpink;
+    --primary-color: deepskyblue;
+    --secundary-color: #0084b0;
     --font-color: black;
-    --background-color: white;
+    --background-color: black;
 }
 
 /*  var(--primary-color) */

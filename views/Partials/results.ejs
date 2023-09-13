@@ -1,8 +1,12 @@
 <div class="resultsContainer">
     <ul class="searchesList">
-        <li class="searchesItem"><p class="searchesTerm">fire</p><button class="searchesTermDelete">x</button></li> 
-        <li class="searchesItem"><p class="searchesTerm">pokemon</p><button class="searchesTermDelete">x</button></li> 
-        <li class="searchesItem"><p class="searchesTerm">criminal</p><button class="searchesTermDelete">x</button></li> 
+        <% products.forEach(element => { %>
+            <% for( let index = 0; index < element.tag.length; index++ ) { %>
+                <li class="searchesItem"><p class="searchesTerm"><%=  element.tag[index] %></p><button class="searchesTermDelete">x</button></li> 
+                
+            <% } %>      
+        <% }) %>
+          
     </ul>
     <div class="resultsList">
         <% products.forEach(element => { %>

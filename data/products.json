@@ -1,57 +1,142 @@
- [
-      {
-        "photo":"thisIsFine.png",
-        "name": "thisIsFine",
-        "price": 300,
-        "tag":["etiqueta1", "etiqueta2", "etiqueta3"],
-        "category":"Stickers"
-      },{
-        "photo":"CriminalGirl.png",
-        "name": "CriminalGirl",
-        "price": 300,
-        "tag":["etiqueta2", "etiqueta3", "etiqueta4"],
-        "category":"Stickers"
-      },
-      { "photo":"Charizard.png",
-        "name": "Charizard",
-        "price": 300,
-        "tag":["etiqueta5", "etiqueta6", "etiqueta7"],
-        "category":"Stickers"
-      },{
-        "photo":"thisIsFine.png",
-        "name": "thisIsFine",
-        "price": 300,
-        "tag":["etiqueta1", "etiqueta2", "etiqueta3"],
-        "category":"Stickers"
-      },{
-        "photo":"CriminalGirl.png",
-        "name": "CriminalGirl",
-        "price": 300,
-        "tag":["etiqueta2", "etiqueta3", "etiqueta4"],
-        "category":"Stickers"
-      },
-      { "photo":"Charizard.png",
-        "name": "Charizard",
-        "price": 300,
-        "tag":["etiqueta5", "etiqueta6", "etiqueta7"],
-        "category":"Stickers"
-      },{
-        "photo":"thisIsFine.png",
-        "name": "thisIsFine",
-        "price": 300,
-        "tag":["etiqueta1", "etiqueta2", "etiqueta3"],
-        "category":"Stickers"
-      },{
-        "photo":"CriminalGirl.png",
-        "name": "CriminalGirl",
-        "price": 300,
-        "tag":["etiqueta2", "etiqueta3", "etiqueta4"],
-        "category":"Stickers"
-      },
-      { "photo":"Charizard.png",
-        "name": "Charizard",
-        "price": 300,
-        "tag":["etiqueta5", "etiqueta6", "etiqueta7"],
-        "category":"Stickers"
-      }
-    ]
+{
+  "Stickers": [
+    {
+      "photo": "thisIsFine.png",
+      "name": "thisIsFine",
+      "price": 300,
+      "tag": [
+        "etiqueta1",
+        "etiqueta2",
+        "etiqueta3"
+      ],
+      "category": "Stickers"
+    },
+    {
+      "photo": "CriminalGirl.png",
+      "name": "CriminalGirl",
+      "price": 300,
+      "tag": [
+        "etiqueta2",
+        "etiqueta3",
+        "etiqueta4"
+      ],
+      "category": "Stickers"
+    },
+    {
+      "photo": "Charizard.png",
+      "name": "Charizard",
+      "price": 300,
+      "tag": [
+        "etiqueta5",
+        "etiqueta6",
+        "etiqueta7"
+      ],
+      "category": "Stickers"
+    }
+  ],
+  "Busos": [
+    {
+      "photo": "thisIsFine.png",
+      "name": "thisIsFine2",
+      "price": 500,
+      "tag": [
+        "etiqueta1",
+        "etiqueta2",
+        "etiqueta3"
+      ],
+      "category": "Stickers"
+    },
+    {
+      "photo": "CriminalGirl.png",
+      "name": "CriminalGirl2",
+      "price": 500,
+      "tag": [
+        "etiqueta2",
+        "etiqueta3",
+        "etiqueta4"
+      ],
+      "category": "Stickers"
+    },
+    {
+      "photo": "Charizard.png",
+      "name": "Charizard2",
+      "price": 500,
+      "tag": [
+        "etiqueta5",
+        "etiqueta6",
+        "etiqueta7"
+      ],
+      "category": "Stickers"
+    }
+  ],
+  "Gorros": [
+    {
+      "photo": "thisIsFine.png",
+      "name": "thisIsFine2",
+      "price": 500,
+      "tag": [
+        "etiqueta1",
+        "etiqueta2",
+        "etiqueta3"
+      ],
+      "category": "Stickers"
+    },
+    {
+      "photo": "CriminalGirl.png",
+      "name": "CriminalGirl2",
+      "price": 500,
+      "tag": [
+        "etiqueta2",
+        "etiqueta3",
+        "etiqueta4"
+      ],
+      "category": "Stickers"
+    },
+    {
+      "photo": "Charizard.png",
+      "name": "Charizard2",
+      "price": 500,
+      "tag": [
+        "etiqueta5",
+        "etiqueta6",
+        "etiqueta7"
+      ],
+      "category": "Stickers"
+    }
+  ],
+  "Posters": [
+    {
+      "photo": "thisIsFine.png",
+      "name": "thisIsFine2",
+      "price": 400,
+      "tag": [
+        "etiqueta1",
+        "etiqueta2",
+        "etiqueta3"
+      ],
+      "category": "Stickers"
+    },
+    {
+      "photo": "CriminalGirl.png",
+      "name": "CriminalGirl2",
+      "price": 400,
+      "tag": [
+        "etiqueta2",
+        "etiqueta3",
+        "etiqueta4"
+      ],
+      "category": "Stickers"
+    },
+    {
+      "photo": "Charizard.png",
+      "name": "Charizard2",
+      "price": 400,
+      "tag": [
+        "etiqueta5",
+        "etiqueta6",
+        "etiqueta7"
+      ],
+      "category": "Stickers"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 .jimenisimaNavbar{
     display: flex;
-    background-color: #58595b;
+    background-color: #000000;
     max-width: 100vw;
     flex-direction: column;
     /* padding: 6px; */
@@ -9,11 +9,9 @@
 }
 .categoriesListRibbon{align-self: stretch;}
 .categoriesList{
-    /* width: 100vw; */
     background-color: var(--secundary-color);
     display: flex;
     gap: 6px;
-    /* overflow-x: scroll; */
     flex-direction: row;
     padding: 6px;
     flex-wrap: wrap;
