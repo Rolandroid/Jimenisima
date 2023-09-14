@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-const {index, dashboard} = require('../controllers/indexController')
+const {index, dashboard, auth} = require('../controllers/indexController')
 
 router
 .get('/',index)
-.get('dashboard', dashboard)
-
+.get('/dashboard', dashboard)
+.get('/auth', auth)
 
 module.exports = router;

@@ -14,9 +14,10 @@ module.exports = {
     }
   },
   dashboard : (req, res) => {
-    let indexView = getIndexView()
-    console.log("indexController check")
-   
+    console.log("indexController check")   
     return res.render('dashboard', {})
+  },
+  auth : (req, res) => {
+    return res.render('auth', {})
   }
 }
