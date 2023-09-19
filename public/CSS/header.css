@@ -30,7 +30,7 @@
 .GoogleAuthRoute {font-size: xx-small;}
 
 .userDefaultImg {
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     width: 80px;
     border-radius: 40px;
 }
@@ -41,6 +41,7 @@
 }
 .registerText{
     font-size: small;
+    position: relative;
 }
 .registerPath{}
 .logoImg{}

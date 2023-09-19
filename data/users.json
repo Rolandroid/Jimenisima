@@ -1,9 +1,14 @@
 [
    {
       "name": "Rolando",
-      "alias": "El Bicho",
-      "email": "rolando@gmail.com",
-      "password": "1234abcd",
+      "alias": "Amito",
+      "email": "r.lisarazo@gmail.com",
+      "password": "123",
+      "avatar": "userDefault.png"
+   },
+   {
+      "email": "r.lisarazo@gmail.com",
+      "password": "123",
       "avatar": "userDefault.png"
    }
 ]

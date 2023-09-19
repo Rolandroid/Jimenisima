@@ -9,6 +9,9 @@ module.exports = {
       res.status(500).send("Error interno del servidor");
     }
   },
+  aboutUs: (req,res)=> {
+    return res.render('aboutUs')
+  },
   dashboard : (req, res) => {
     console.log("indexController check")   
     return res.render('dashboard', {})

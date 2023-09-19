@@ -1,4 +1,4 @@
-const { getAllUsers, saveNewUser } = require("../services")
+const { getAllUsers, saveNewUser, validarUsuario} = require("../services")
 
 
 module.exports = {
@@ -18,6 +18,37 @@ module.exports = {
   },
   loginProcess: async (req, res) => {
     try {
+      const emailSearched = req.body.email;
+      const passwordSearched = req.body.password;
+      console.log(emailSearched);
+      console.log(passwordSearched);
+
+
+
+     let UsuarioAccedido = validarUsuario(emailSearched,passwordSearched)
+      
+     
+      if (UsuarioAccedido) {
+        
+        req.session.userLogin = {UsuarioAccedido}
+        
+        console.log(req.session.userLogin.UsuarioAccedido.name + " " + req.session.userLogin.UsuarioAccedido.alias)
+
+        console.log('Bienvenido ' + UsuarioAccedido.alias);
+      } else {
+        console.log('No se encontró ningún objeto con el atributo deseado.');
+      }
+      
+
+
+
+
+
+
+
+
+
+
       return res.redirect('/');
     } catch (error) {
       res.status(500).send("Error interno del servidor");

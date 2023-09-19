@@ -19,7 +19,7 @@
 .divBannerTextP{text-align: center;font-size: small;}
 
 
-@media(width <= 320px){
+@media(width <= 420px){
     .divBanner{}
     .divBannerIcon{}
     .divBannerTextSpan{

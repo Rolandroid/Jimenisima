@@ -56,6 +56,24 @@ module.exports = {
     let users = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/users.json"), 'utf-8'));
     users.push(user)
     fs.writeFileSync(path.resolve(__dirname, ".." ,"data", "users.json" ), JSON.stringify(users, null, 3), 'utf-8')
-}
+},
+validarUsuario : (emailSearched, passwordSearched) => {
+  let users = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/users.json"), 'utf-8'));
+
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].email === emailSearched && users[i].password === passwordSearched) {
+      return users[i];
+    }
+  }
+  return null; 
+
 
 }
+
+
+
+
+}
+
+
+

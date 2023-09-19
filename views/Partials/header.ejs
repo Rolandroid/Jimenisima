@@ -1,23 +1,44 @@
 <header class="jimenisimaHeader">
-    <div class="userIngressDiv">
-        <div class="GoogleAuthImgContainer">
-            <div class="GoogleAuthContent">
-                <a class="GoogleAuthRoute" href="" class="GoogleAuthContentPath">
-                    Ingresar con Google
+    <% if (locals.userLogin) { %>
+        <div class="userIngressDiv">
+            <div class="GoogleAuthImgContainer">
+                <div class="GoogleAuthContent">
+                </div>
+                <img src="<%="/images/assets/" + locals.userLogin.UsuarioAccedido.avatar || "default-user.png"%>" alt="ingreso con google" class="userDefaultImg">
+            </div>
+                <div class="userIngressOptionsDiv">
+                <a class="loginPath" href="/users/login">
+                    <span class="loginText"><%= locals.userLogin.UsuarioAccedido.alias %></span>
+                </a>
+                <a class="registerPath" href="/users/register">
+                    <span class="registerText"><%= locals.userLogin.UsuarioAccedido.email %>
+                    </span>
                 </a>
             </div>
-            <img src="/images/assets/userDefault.png" alt="ingreso con google" class="userDefaultImg">
         </div>
-            <div class="userIngressOptionsDiv">
-            <a class="loginPath" href="/users/login">
-                <span class="loginText">Iniciar Sesion</span>
-            </a>
-            <a class="registerPath" href="/users/register">
-                <span class="registerText">Crear cuenta
-                </span>
-            </a>
-        </div>
-    </div>
+        
+        <% }else{ %>
+            <div class="userIngressDiv">
+                <div class="GoogleAuthImgContainer">
+                    <div class="GoogleAuthContent">
+                        <a class="GoogleAuthRoute" href="" class="GoogleAuthContentPath">
+                            Ingresar con Google
+                        </a>
+                    </div>
+                    <img src="/images/assets/userDefault.png" alt="ingreso con google" class="userDefaultImg">
+                </div>
+                    <div class="userIngressOptionsDiv">
+                    <a class="loginPath" href="/users/login">
+                        <span class="loginText">Iniciar Sesion</span>
+                    </a>
+                    <a class="registerPath" href="/users/register">
+                        <span class="registerText">Crear cuenta
+                        </span>
+                    </a>
+                </div>
+            </div>
+        <% } %>
+    
     
         <a class="HomePath" href="/">
             <img src="/images/assets/jimenisimaLogo.png" alt="Jimenisima" class="logoImg">

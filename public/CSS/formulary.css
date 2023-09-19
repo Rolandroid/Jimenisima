@@ -1,6 +1,5 @@
 .formularyMain{
     background-color: var(--background-color);
-    height: 60vh;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -9,7 +8,7 @@
 }
 .formularyMain{
     background-color: var(--background-color);
-    height: 60vh;
+    height: 500px;
     display: flex;
     flex-direction: column;
     gap: 10px;
