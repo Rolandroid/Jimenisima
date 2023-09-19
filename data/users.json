@@ -7,8 +7,17 @@
       "avatar": "userDefault.png"
    },
    {
-      "email": "r.lisarazo@gmail.com",
-      "password": "123",
+      "name": "Luna",
+      "alias": "Lunita",
+      "email": "Luna@test.com",
+      "password": "1234",
+      "avatar": "userDefault.png"
+   },
+   {
+      "name": "Rolando",
+      "alias": "Amito",
+      "email": "Rolando@test.com",
+      "password": "1234",
       "avatar": "userDefault.png"
    }
 ]

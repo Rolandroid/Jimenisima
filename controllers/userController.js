@@ -8,7 +8,7 @@ module.exports = {
   registerProcess: async (req, res) => {
     try {
       saveNewUser({ ...req.body, avatar: "userDefault.png" })
-      return res.render('login', {})
+      return res.redirect('/users/login')
     } catch (error) {
       res.status(500).send("Error interno del servidor");
     }
