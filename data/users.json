@@ -12,12 +12,5 @@
       "email": "Luna@test.com",
       "password": "1234",
       "avatar": "userDefault.png"
-   },
-   {
-      "name": "Rolando",
-      "alias": "Amito",
-      "email": "Rolando@test.com",
-      "password": "1234",
-      "avatar": "userDefault.png"
    }
 ]
