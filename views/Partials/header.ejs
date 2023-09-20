@@ -7,13 +7,24 @@
                 <img src="<%="/images/assets/" + locals.userLogin.UsuarioAccedido.avatar || "default-user.png"%>" alt="ingreso con google" class="userDefaultImg">
             </div>
                 <div class="userIngressOptionsDiv">
-                <a class="loginPath" href="/users/login">
+                
                     <span class="loginText"><%= locals.userLogin.UsuarioAccedido.alias %></span>
-                </a>
-                <a class="registerPath" href="/users/register">
+                
+                
                     <span class="registerText"><%= locals.userLogin.UsuarioAccedido.email %>
                     </span>
-                </a>
+                
+                <div class="headerLoginMenu">
+                    <a href="">
+                        <i class="headerLoginMenuIcon fa-solid fa-cart-shopping"></i>
+                    </a>
+                    <a href="">
+                        <i class="headerLoginMenuIcon fa-solid fa-gear"></i>
+                    </a>
+                    <a href="/users/logout">
+                        <i class="headerLoginMenuIcon fa-solid fa-right-from-bracket"></i>
+                    </a>
+                </div>
             </div>
         </div>
         

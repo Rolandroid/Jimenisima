@@ -1,8 +1,14 @@
 <main class="formularyMain">
 
     <form class="formularyForm" action="" name="loginForm" method="POST">
-        <label class="formularyLabel" for="email"> Email : <input class="formularyInput" id="email" name="email" type="email"></label>
-        <label class="formularyLabel" for="password"> Password : <input class="formularyInput" id="password" name="password" type="password"></label>
+        <label class="formularyLabel" for="email"> Email : <input class="formularyInput" id="email" name="email" type="email" value="<%= (locals.old && old.email) && old.email %>"></label>
+        <small class="register__errors" id="errorEmail">
+            <%= locals.errors && errors.email ? errors.email.msg : null %>
+          </small>
+        <label class="formularyLabel" for="password"> Password : <input class="formularyInput" id="password" name="password" type="password" value="<%= (locals.old && old.password) && old.password %>" ></label>
+        <small class="register__errors" id="errorPass" >
+            <%= locals.errors && errors.password ? errors.password.msg : null %>
+          </small>
         <button class="formularyButton" >Ingresar</button>
     </form>
     <a class="formularyHref" href="/users/register">Crear cuenta</a>

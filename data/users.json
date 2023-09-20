@@ -2,15 +2,22 @@
    {
       "name": "Rolando",
       "alias": "Amito",
-      "email": "r.lisarazo@gmail.com",
-      "password": "123",
+      "email": "Rolando@test.com",
+      "password": "qwe123!\"#",
       "avatar": "userDefault.png"
    },
    {
       "name": "Luna",
       "alias": "Lunita",
       "email": "Luna@test.com",
-      "password": "1234",
+      "password": "qQ1!",
+      "avatar": "userDefault.png"
+   },
+   {
+      "name": "Rolando",
+      "alias": "Amito",
+      "email": "Rolando@test.com",
+      "password": "Qq!1",
       "avatar": "userDefault.png"
    }
 ]

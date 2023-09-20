@@ -1,0 +1,31 @@
+const { check, body } = require('express-validator');
+const fs = require('fs');
+const path = require('path');
+
+// Cargar la lista de usuarios desde el archivo JSON
+const users = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/users.json'), 'utf-8'));
+
+module.exports = [
+   body('email')
+    .isEmail().withMessage('Debe ser un email con formato válido')
+    .custom((value, { req }) => {
+      // Verificar si el correo electrónico está en la lista de usuarios
+      const user = users.find(user => user.email === value);
+      if (!user) {
+        throw new Error('El correo electrónico no está registrado');
+      }
+      // Almacenar el usuario encontrado en la solicitud para su uso posterior
+      req.foundUser = user;
+      return true;
+    }),
+
+  check('password')
+    .notEmpty().withMessage('La contraseña es obligatoria')
+    .custom((value, { req }) => {
+      // Verificar si la contraseña coincide con la del usuario encontrado
+      if (req.foundUser && value !== req.foundUser.password) {
+        throw new Error('La contraseña no coincide');
+      }
+      return true;
+    })
+];

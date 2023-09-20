@@ -2,13 +2,25 @@
 
     <form class="formularyForm" action="" name="registerForm" method="POST">
         <label class="formularyLabel" for="name">Nombre : <input class="formularyInput" name="name" id="name"
-                type="text"></label>
+                type="text" value="<%= (locals.old && old.name) && old.name %>"></label>
+                <small class="register__errors " id="errorName">
+                        <%= locals.errors && errors.name ? errors.name.msg : null %>
+                      </small>
         <label class="formularyLabel" for="alias">Alias : <input class="formularyInput" name="alias" id="alias"
-                type="text"></label>
+                type="text" value="<%= (locals.old && old.alias) && old.alias %>"></label>
+                <small class="register__errors" id="errorSurname">
+                        <%= locals.errors && errors.alias? errors.alias.msg : null %>
+                      </small>
         <label class="formularyLabel" for="email">Email : <input class="formularyInput" name="email" id="email"
-                type="email"></label>
+                type="email" value="<%= (locals.old && old.email) && old.email %>"></label>
+                <small class="register__errors" id="errorEmail">
+                        <%= locals.errors && errors.email ? errors.email.msg : null %>
+                      </small>
         <label class="formularyLabel" for="password">Password : <input class="formularyInput" name="password"
-                id="password" type="password"></label>
+                id="password" type="password" value="<%= (locals.old && old.password) && old.password %>"></label>
+                <small class="register__errors" id="errorPass" >
+                        <%= locals.errors && errors.password ? errors.password.msg : null %>
+                      </small>
         <button class="formularyButton">registrar</button>
     </form>
     <a class="formularyHref" href="">registrarse con google</a>

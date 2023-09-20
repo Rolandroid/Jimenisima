@@ -1,13 +1,16 @@
 const express = require('express');
 const router = express.Router();
 
-const {login, register, loginProcess, registerProcess} = require('../controllers/userController')
+const {login, register, loginProcess, registerProcess,logout} = require('../controllers/userController')
+const registerUserValidation = require('../validations/registerUserValidation')
+const loginUserValidation = require('../validations/loginUserValidation')
 
 /* app.use '/users' */
 router
-.get('/login', login)
-.post('/login', loginProcess)
 .get('/register', register)
-.post('/register', registerProcess)
+.post('/register',registerUserValidation, registerProcess)
+.get('/login', login)
+.post('/login',loginUserValidation, loginProcess)
+.get('/logout',logout)
 
 module.exports = router;
