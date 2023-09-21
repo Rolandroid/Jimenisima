@@ -1,4 +1,8 @@
 const { check, body } = require('express-validator');
+const fs = require('fs');
+const path = require('path');
+
+const users = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/users.json'), 'utf-8'));
 
 module.exports = [
   check('name')
@@ -9,14 +13,18 @@ module.exports = [
     .isLength({ min: 2 }).withMessage('Mínimo dos letras').bail()
     .isAlpha('es-ES', { ignore: " " }).withMessage('Solo caracteres alfabéticos'),
 
-  body('email')
-    .isEmail().withMessage('Debe ser un email con formato válido'),
+    body('email')
+    .isEmail().withMessage('Debe ser un email con formato válido')
+    .custom(async (value, { req }) => {
+      const user = users.find(user => user.email === value);
+      if (user) {
+        throw new Error('El correo electrónico ya se encuentra registrado');
+      }
+      return true;
+    }),
     
 
-  check('password')
-    .isLength({ min: 4, max: 8 }).withMessage('min cuatro y max ocho caracteres').bail()
-    .matches(/[A-Z]/).withMessage('Debe contener al menos una mayúscula').bail()
-    .matches(/[a-z]/).withMessage('Debe contener al menos una minúscula').bail()
-    .matches(/\d/).withMessage('Debe contener al menos un número').bail()
-    .matches(/[!@#$%^&*()-_=+{};:,<.>]/).withMessage('Debe contener al menos un símbolo especial'),
+    check('password')
+    .isLength({ min: 6 }).withMessage('La contraseña debe tener al menos 6 caracteres')
+    .matches(/^(?=.*[a-zA-Z])(?=.*\d).*$/).withMessage('Debe contener al menos tres letras y tres números'),
 ];

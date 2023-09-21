@@ -15,6 +15,11 @@
                     </span>
                 
                 <div class="headerLoginMenu">
+                    <% if (locals.userLogin.UsuarioAccedido.rol === "admin") { %>
+                        <a href="">
+                            <i class="headerLoginMenuIcon fa-solid fa-chart-line"></i>
+                    </a>
+                        <% } %>
                     <a href="">
                         <i class="headerLoginMenuIcon fa-solid fa-cart-shopping"></i>
                     </a>

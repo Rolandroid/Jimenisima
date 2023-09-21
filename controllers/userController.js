@@ -9,7 +9,7 @@ module.exports = {
     const errors = validationResult(req);
     if (errors.isEmpty()) {
       try {
-        saveNewUser({ ...req.body, avatar: "userDefault.png" })
+        saveNewUser({ ...req.body, avatar: "userDefault.png", rol: "user" })
         return res.redirect('/users/login')
       } catch (error) {
         res.status(500).send("Error interno del servidor");
