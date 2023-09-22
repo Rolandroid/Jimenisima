@@ -11,9 +11,9 @@
 .infoBox{
     display: flex;
     padding: 6px;
-    justify-content: space-around;
-    flex-wrap: wrap;
     gap: 12px;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .commentInputBox{
     display: flex;
@@ -30,17 +30,17 @@
     color: var(--primary-color);
 }
 .footerSection{
-    width: 147px;
+    /* width: 125px; */
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
 }
-.footerSectionTitle{font-size: larger;}
+.footerSectionTitle{font-size: 9px;font-weight: 600;}
 .footerSectionListItem{
-    font-size: x-small;
+    font-size: 10px;
 }
 .footerSectionListItemItem{}
-.footerSectionList{/* font-size: small; */}
+.footerSectionList{}
 .footerCredits{
     display: flex;
     justify-content: center;
@@ -52,9 +52,8 @@
      .footerSectionList{font-size: x-small;}
 }
 
-@media(width <= 768px){
+@media(width >= 768px){
     .infoBox{
-  justify-content: flex-start;
   }
 
 }
