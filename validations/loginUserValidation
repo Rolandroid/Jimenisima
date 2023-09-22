@@ -1,6 +1,8 @@
 const { check, body } = require('express-validator');
 const fs = require('fs');
 const path = require('path');
+const {compareSync} = require('bcryptjs');
+
 
 const users = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/users.json'), 'utf-8'));
 
@@ -19,7 +21,7 @@ module.exports = [
   check('password')
     .notEmpty().withMessage('La contraseña es obligatoria')
     .custom((value, { req }) => {
-      if (req.foundUser && value !== req.foundUser.password) {
+      if (req.foundUser && !compareSync(value, req.foundUser.password)) {
         throw new Error('La contraseña no coincide');
       }
       return true;

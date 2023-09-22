@@ -1,5 +1,6 @@
 const { getAllUsers, saveNewUser, validarUsuario } = require("../services")
 const { validationResult } = require('express-validator')
+const { hashSync } = require('bcryptjs')
 
 module.exports = {
   register: (req, res) => {
@@ -9,7 +10,14 @@ module.exports = {
     const errors = validationResult(req);
     if (errors.isEmpty()) {
       try {
-        saveNewUser({ ...req.body, avatar: "userDefault.png", rol: "user" })
+        saveNewUser({
+          name: req.body.name,
+          rol: "user",
+          alias: req.body.alias,
+          email: req.body.email,
+          password: hashSync(req.body.password,12),
+          avatar:"userDefault.png"
+        })
         return res.redirect('/users/login')
       } catch (error) {
         res.status(500).send("Error interno del servidor");
@@ -37,7 +45,7 @@ module.exports = {
                  console.log('No se encontró ningún objeto con el atributo deseado.');
                }
              
-               return res.redirect('/');
+               return res.redirect('/'); /* Aca se termina la funcion. lo demas es por si no funciona */
              } catch (error) {
                res.status(500).send("Error interno del servidor");
              }

@@ -1,5 +1,6 @@
 const fs = require('fs')
 const path = require('path')
+const {compareSync} = require('bcryptjs');
 const convertFormatPeso = (n) =>
   n.toLocaleString("es-AR", {
     style: "currency",
@@ -61,7 +62,8 @@ validarUsuario : (emailSearched, passwordSearched) => {
   let users = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/users.json"), 'utf-8'));
 
   for (let i = 0; i < users.length; i++) {
-    if (users[i].email === emailSearched && users[i].password === passwordSearched) {
+    console.log(users[i].password)
+    if (users[i].email === emailSearched && compareSync(passwordSearched, users[i].password)) {
       return users[i];
     }
   }

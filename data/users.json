@@ -1,18 +1,10 @@
 [
    {
-      "name": "Rolando",
-      "rol": "admin",
-      "alias": "Amito",
-      "email": "Rolando@test.com",
-      "password": "qwe123",
-      "avatar": "userDefault.png"
-   },
-   {
       "name": "Luna",
+      "rol": "admin",
       "alias": "Lunita",
       "email": "Luna@test.com",
-      "password": "qwe123",
-      "avatar": "userDefault.png",
-      "rol": "user"
+      "password": "$2a$12$gg9kyWTVjeWn7JKMAsVJFeacUXrnZXKHPXPGgSyplypiutMeAwawW",
+      "avatar": "userDefault.png"
    }
 ]
