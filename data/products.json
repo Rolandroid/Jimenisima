@@ -32,6 +32,28 @@
             "etiqueta7"
          ],
          "category": "Stickers"
+      },
+      {
+         "photo": "thisIsFine.png",
+         "name": "Comun",
+         "price": "1000",
+         "tag": [
+            "Normal",
+            "Cualquiera",
+            "Ha lo que sea"
+         ],
+         "category": "Stickers"
+      },
+      {
+         "photo": "productDefault.png",
+         "name": "Nuevo Stiqeur",
+         "price": "100",
+         "tag": [
+            "Nomal",
+            "Fuego",
+            "Chicorita"
+         ],
+         "category": "Stickers"
       }
    ],
    "Buzos": [

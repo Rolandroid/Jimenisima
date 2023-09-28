@@ -18,10 +18,9 @@ module.exports = {
     return res.render('dashboard', {products : products})
   },
   createProduct : (req, res) => {
-    let products = getAllProducts()
     let category = req.body.category
     let product = {
-      photo: "thisIsFine.png",
+      photo: "productDefault.png",
   name: req.body.name,
   price: req.body.price,
   tag: [
@@ -32,6 +31,6 @@ module.exports = {
   category: req.body.category
     }
     productCreation(category,product)
-  return res.render('dashboard', {products : products})
+  return res.redirect('/dashboard')
   }
 }
