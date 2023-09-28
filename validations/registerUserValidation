@@ -10,8 +10,7 @@ module.exports = [
     .isAlpha('es-ES', { ignore: " " }).withMessage('Solo caracteres alfabéticos'),
 
   check('alias')
-    .isLength({ min: 2 }).withMessage('Mínimo dos letras').bail()
-    .isAlpha('es-ES', { ignore: " " }).withMessage('Solo caracteres alfabéticos'),
+    .isLength({ min: 2 }).withMessage('Mínimo dos letras').bail(),
 
     body('email')
     .isEmail().withMessage('Debe ser un email con formato válido')
@@ -25,6 +24,7 @@ module.exports = [
     
 
     check('password')
-    .isLength({ min: 6 }).withMessage('La contraseña debe tener al menos 6 caracteres')
-    .matches(/^(?=.*[a-zA-Z])(?=.*\d).*$/).withMessage('Debe contener al menos tres letras y tres números'),
+    .isLength({ min: 6 }).withMessage('minimo seis caracteres')
+    .matches(/^(?=.*[a-zA-Z])(?=.*\d).*$/).withMessage('debe contener una letra y un numero')
+
 ];

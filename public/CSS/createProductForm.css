@@ -1,0 +1,28 @@
+.DashboardMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+.DashboardMenuButton{}
+.createFormularyTitle{
+    /* background-color: #ffffff; */
+    color: black;
+}
+.createFormularyForm{
+    background-color: var(--primary-color);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    padding: 2px;
+}
+.createFormularyLabel{}
+.createFormularyInput{
+    max-width: 200px;
+}
+.create__errors{}
+.createFormularyButtonsLayout{}
+.createFormularyButton{}

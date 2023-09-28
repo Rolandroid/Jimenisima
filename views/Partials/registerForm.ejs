@@ -1,6 +1,6 @@
 <main class="formularyMain">
 
-    <form class="formularyForm" action="" name="registerForm" method="POST">
+    <form class="formularyForm" action="/users/register" name="registerForm" method="POST">
         <label class="formularyLabel" for="name">Nombre : <input class="formularyInput" name="name" id="name"
                 type="text" value="<%= (locals.old && old.name) && old.name %>"></label>
                 <small class="register__errors " id="errorName">

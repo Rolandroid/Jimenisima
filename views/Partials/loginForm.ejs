@@ -1,6 +1,6 @@
 <main class="formularyMain">
 
-    <form class="formularyForm" action="" name="loginForm" method="POST">
+    <form class="formularyForm" action="/users/login" name="loginForm" method="POST">
         <label class="formularyLabel" for="email"> Email : <input class="formularyInput" id="email" name="email" type="email" value="<%= (locals.old && old.email) && old.email %>"></label>
         <small class="register__errors" id="errorEmail">
             <%= locals.errors && errors.email ? errors.email.msg : null %>

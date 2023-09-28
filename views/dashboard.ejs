@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <% console.log(products); %>
+
+  <%- include('./partials/head') %>
+  <body class="">
+    <%- include('./partials/header',) %>
+    <%- include('./partials/createProductForm',) %>
+    <%- include('./partials/dashboardListItem',{products : products}) %>
+
+    
+    <%- include('./partials/footer',) %>
+  </body>

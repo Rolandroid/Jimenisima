@@ -24,7 +24,7 @@ module.exports = {
       const products = JSON.parse(rawData);
 
       const categoriesList = Object.keys(products);
-      const recommended = products.Busos;
+      const recommended = products.Buzos;
 
       let indexView = {
         categoriesList,
@@ -69,6 +69,31 @@ validarUsuario : (emailSearched, passwordSearched) => {
   }
   return null; 
 
+
+},
+productCreation : (category,product)=>{
+  let products = JSON.parse(fs.readFileSync(path.join(__dirname, "../data/products.json"), 'utf-8'));
+
+  if(category === "Stickers"){
+  products.Stickers.push(product)
+}
+if(category === "Buzos"){
+  products.Buzos.push(product)
+}
+if(category === "Gorros"){
+  products.Gorros.push(product)
+}
+if(category === "Posters"){
+  products.Posters.push(product)
+}
+
+fs.writeFileSync(path.resolve(__dirname, ".." ,"data", "products.json" ), JSON.stringify(products, null, 3), 'utf-8')
+
+
+  console.log(products)
+
+  console.log(category)
+  console.log(product)
 
 }
 

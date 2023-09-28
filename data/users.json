@@ -6,5 +6,13 @@
       "email": "Luna@test.com",
       "password": "$2a$12$gg9kyWTVjeWn7JKMAsVJFeacUXrnZXKHPXPGgSyplypiutMeAwawW",
       "avatar": "userDefault.png"
+   },
+   {
+      "name": "Almudena",
+      "rol": "user",
+      "alias": "quake 4",
+      "email": "almudena@test.com",
+      "password": "$2a$12$Q6C024z6ltzYVlSFwIqP2uVRAqVGpcyhgKFZ5.Uw93MkdOe0i37.2",
+      "avatar": "userDefault.png"
    }
 ]

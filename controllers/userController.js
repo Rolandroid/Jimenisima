@@ -1,4 +1,4 @@
-const { getAllUsers, saveNewUser, validarUsuario } = require("../services")
+const { getAllUsers, saveNewUser, validarUsuario, getAllProducts } = require("../services")
 const { validationResult } = require('express-validator')
 const { hashSync } = require('bcryptjs')
 
@@ -58,4 +58,5 @@ module.exports = {
         req.session.destroy();
         return res.redirect('/')
     }
+   
 }

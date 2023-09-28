@@ -1,0 +1,31 @@
+.DashboardItems{}
+.DashboardItem{
+    display: flex;
+    background-color: white;
+    margin: 2px;
+    width: 300px;
+}
+.DashboardItemimageBox{
+    min-width: 25px;
+    min-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dashboardItemImage{
+    max-width: 25px;
+    max-height: 25px;
+}
+.DashboardItemInfoBox{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.DashboardItemInfo{}
+.DashboardItemInfoBox{}
+.DashboardItemTagsBox{
+    display: flex;
+    font-size: smaller;
+    gap: 3px;
+}
+.DashboardItemTag{}
