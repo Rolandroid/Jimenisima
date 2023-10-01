@@ -1,57 +1,65 @@
 <div class="DashboardMenu">
-    <button class="DashboardMenuButton">Crear Producto</button>
-   
+
     <form class="createFormularyForm" action="/createProduct" name="createProduct" method="POST">
         <p class="createFormularyTitle">
             Crear producto
-           </p> 
-    <select id="producto" name="category">
-        <option value="Stickers">Stickers</option>
-        <option value="Buzos">Buzos</option>
-        <option value="Gorros">Gorros</option>
-        <option value="Posters">Posters</option>
-    </select>
-    <small class="create__errors" id="errorCategory">
-        <%= /* locals.errors && errors.category ? errors.category.msg : null */ %>
-    </small>
+        </p>
+        <select id="producto" name="category">
+            <option value="Stickers">Stickers</option>
+            <option value="Buzos">Buzos</option>
+            <option value="Gorros">Gorros</option>
+            <option value="Posters">Posters</option>
+        </select>
+        <small class="create__errors" id="errorCategory">
+            <%= /* locals.errors && errors.category ? errors.category.msg : null */ %>
+        </small>
 
-    <input class="createFormularyInput" name="photo" id="photo" placeholder="Foto"
-            type="file" value="<%= /* (locals.old && old.photo) && old.photo */ %>">
-    <small class="create__errors" id="errorPhoto">
-        <%= /* locals.errors && errors.photo ? errors.photo.msg : null */ %>
-    </small>
+        <input class="createFormularyInput" name="photo" id="photo" placeholder="Foto" type="file"
+            value="<%= /* (locals.old && old.photo) && old.photo */ %>">
+        <small class="create__errors" id="errorPhoto">
+            <%= /* locals.errors && errors.photo ? errors.photo.msg : null */ %>
+        </small>
 
-    <input class="createFormularyInput" name="name" id="name" placeholder="Nombre"
-            type="text" value="<%= /* (locals.old && old.name) && old.name */ %>">
-    <small class="create__errors" id="errorName">
-        <%= /* locals.errors && errors.name ? errors.name.msg : null */ %>
-    </small>
+                
 
-    <input class="createFormularyInput" name="price" placeholder="Precio"
-        id="price" type="text" value="<%= /* (locals.old && old.price) && old.price */ %>">
-<small class="create__errors" id="errorPrice">
-    <%= /* locals.errors && errors.price ? errors.price.msg : null */ %>
-</small>
+            <input class="createFormularyInput" name="name" id="name" placeholder="Nombre" type="text"
+                value="<%= /* (locals.old && old.name) && old.name */ %>">
+            <small class="create__errors" id="errorName">
+                <%= /* locals.errors && errors.name ? errors.name.msg : null */ %>
+            </small>
 
-    <input class="createFormularyInput" name="tag1" id="tag1" placeholder="Etiqueta 1"
-            type="text" value="<%= /* (locals.old && old.tag1) && old.tag1 */ %>">
-    <small class="create__errors" id="errorTag1">
-        <%= /* locals.errors && errors.tag1 ? errors.tag1.msg : null */ %>
-    </small>
+            <input class="createFormularyInput" name="price" placeholder="Precio" id="price" type="number"
+                value="<%= /* (locals.old && old.price) && old.price */ %>">
+            <small class="create__errors" id="errorPrice">
+                <%= /* locals.errors && errors.price ? errors.price.msg : null */ %>
+            </small>
 
-    <input class="createFormularyInput" name="tag2" id="tag2"placeholder="Etiqeuta 2"
-            type="text" value="<%= /* (locals.old && old.tag2) && old.tag2 */ %>">
-    <small class="create__errors" id="errorTag2">
-        <%= /* locals.errors && errors.tag2 ? errors.tag2.msg : null */ %>
-    </small>
-    <input class="createFormularyInput" name="tag3" id="tag3" placeholder="Etiqeuta 3"
-            type="text" value="<%= /* (locals.old && old.tag3) && old.tag3 */ %>">
-    <small class="create__errors" id="errorTag3">
-        <%= /* locals.errors && errors.tag3 ? errors.tag3.msg : null */ %>
-    </small>
-    <div class="createFormularyButtonsLayout" >
-        <button class="createFormularyButton" >reset</button>
-        <button>crear</button>
-    </div>
+            <input class="createFormularyInput" name="discount" placeholder="Descuento" id="discount" type="number"
+                value="<%= /* (locals.old && old.discount) && old.discount */ %>">
+            <small class="create__errors" id="errorDiscount">
+                <%= /* locals.errors && errors.discount ? errors.discount.msg : null */ %>
+            </small>
+
+            Etiquetas 
+            <input class="createFormularyInput" name="tag1" id="tag1" placeholder="Etiqueta 1" type="text"
+                value="<%= /* (locals.old && old.tag1) && old.tag1 */ %>">
+            <small class="create__errors" id="errorTag1">
+                <%= /* locals.errors && errors.tag1 ? errors.tag1.msg : null */ %>
+            </small>
+
+            <input class="createFormularyInput" name="tag2" id="tag2" placeholder="Etiqeuta 2" type="text"
+                value="<%= /* (locals.old && old.tag2) && old.tag2 */ %>">
+            <small class="create__errors" id="errorTag2">
+                <%= /* locals.errors && errors.tag2 ? errors.tag2.msg : null */ %>
+            </small>
+            <input class="createFormularyInput" name="tag3" id="tag3" placeholder="Etiqeuta 3" type="text"
+                value="<%= /* (locals.old && old.tag3) && old.tag3 */ %>">
+            <small class="create__errors" id="errorTag3">
+                <%= /* locals.errors && errors.tag3 ? errors.tag3.msg : null */ %>
+            </small>
+        <div class="createFormularyButtonsLayout">
+            <button class="createFormularyButton">reset</button>
+            <button>crear</button>
+        </div>
     </form>
 </div>

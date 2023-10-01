@@ -3,7 +3,8 @@
     display: flex;
     background-color: white;
     margin: 2px;
-    width: 300px;
+    /* width: 300px; */
+    gap: 5px;
 }
 .DashboardItemimageBox{
     min-width: 25px;
@@ -28,4 +29,9 @@
     font-size: smaller;
     gap: 3px;
 }
-.DashboardItemTag{}
+.DashboardItemTag{
+    border: black solid 1px;
+    margin: 1px;
+    padding: 0 2px;
+    font-size: x-small;
+}

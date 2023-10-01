@@ -1,21 +1,26 @@
-<ul class="DashboardItems">
-<% products.Stickers.forEach(product => { %>
-        <li class="DashboardItem">
-            <div class="DashboardItemimageBox"><img class="dashboardItemImage" src="/images/products/<%= product.photo %>" alt=""></div>
-            <div class="DashboardItemSecundaryBox">
-
-                <div class="DashboardItemInfoBox">
-                    <p class="DashboardItemInfo"> <%= product.category%> </p>
-                    <p class="DashboardItemInfo"> <%= product.name %>    </p>
-            <p class="DashboardItemInfo"> $ <%= product.price %>   </p>
-        </div>
-        <div class="DashboardItemTagsBox">
-            <p class="DashboardItemTag"> <%= product.tag[0] %> </p>
-            <p class="DashboardItemTag"> <%= product.tag[1] %>    </p>
-            <p class="DashboardItemTag"> <%= product.tag[2] %>   </p>
-        </div>
-    </div>
-        </li>        
-        <% }) %>
+<div style="color: beige;">
+    Gorros
+    <ul class="DashboardItems">
+        <% products.Stickers.forEach(product=> { %>
+            <%- include('dashboardItem',{product:product}) %>
+                <% }) %>
     </ul>
-    
+    Buzos
+    <ul class="DashboardItems">
+        <% products.Buzos.forEach(product=> { %>
+            <%- include('dashboardItem',{product:product}) %>
+                <% }) %>
+    </ul>
+    Posters
+    <ul class="DashboardItems">
+        <% products.Posters.forEach(product=> { %>
+            <%- include('dashboardItem',{product:product}) %>
+                <% }) %>
+    </ul>
+    Gorros
+    <ul class="DashboardItems">
+        <% products.Gorros.forEach(product=> { %>
+            <%- include('dashboardItem',{product:product}) %>
+                <% }) %>
+    </ul>
+</div>

@@ -1,4 +1,4 @@
-const { getIndexView, getAllProducts,productCreation } = require("../services")
+const { getIndexView, getAllProducts,productCreation,searchedItems } = require("../services")
 
 module.exports = {
   index: async (req, res) => {
@@ -18,19 +18,7 @@ module.exports = {
     return res.render('dashboard', {products : products})
   },
   createProduct : (req, res) => {
-    let category = req.body.category
-    let product = {
-      photo: "productDefault.png",
-  name: req.body.name,
-  price: req.body.price,
-  tag: [
-  req.body.tag1,
-  req.body.tag2,
-  req.body.tag3
-  ],
-  category: req.body.category
-    }
-    productCreation(category,product)
+    productCreation(req)
   return res.redirect('/dashboard')
   }
 }

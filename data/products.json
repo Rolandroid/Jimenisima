@@ -1,162 +1,176 @@
 {
    "Stickers": [
       {
+         "id": 1,
          "photo": "thisIsFine.png",
          "name": "thisIsFine",
          "price": 300,
+         "discount": 0,
          "tag": [
-            "etiqueta1",
-            "etiqueta2",
-            "etiqueta3"
+            "meme",
+            "fuego",
+            "perro"
          ],
          "category": "Stickers"
       },
       {
+         "id": 2,
          "photo": "CriminalGirl.png",
          "name": "CriminalGirl",
          "price": 300,
+         "discount": 0,
          "tag": [
-            "etiqueta2",
-            "etiqueta3",
-            "etiqueta4"
+            "rosa",
+            "chica",
+            "pasamontaña"
          ],
          "category": "Stickers"
       },
       {
+         "id": 3,
          "photo": "Charizard.png",
          "name": "Charizard",
          "price": 300,
+         "discount": 0,
          "tag": [
-            "etiqueta5",
-            "etiqueta6",
-            "etiqueta7"
-         ],
-         "category": "Stickers"
-      },
-      {
-         "photo": "thisIsFine.png",
-         "name": "Comun",
-         "price": "1000",
-         "tag": [
-            "Normal",
-            "Cualquiera",
-            "Ha lo que sea"
-         ],
-         "category": "Stickers"
-      },
-      {
-         "photo": "productDefault.png",
-         "name": "Nuevo Stiqeur",
-         "price": "100",
-         "tag": [
-            "Nomal",
-            "Fuego",
-            "Chicorita"
+            "pokemon",
+            "fuego",
+            "eternal"
          ],
          "category": "Stickers"
       }
    ],
    "Buzos": [
       {
-         "photo": "thisIsFine.png",
-         "name": "thisIsFine2",
-         "price": 500,
+         "id": 4,
+         "photo": "Ranma.png",
+         "name": "ranma",
+         "price": 800,
+         "discount": 0,
          "tag": [
-            "etiqueta1",
-            "etiqueta2",
-            "etiqueta3"
+            "anime",
+            "fuego",
+            "otaku"
          ],
          "category": "Buzos"
       },
       {
-         "photo": "CriminalGirl.png",
-         "name": "CriminalGirl2",
-         "price": 500,
+         "id": 5,
+         "photo": "sakura.png",
+         "name": "Sakura",
+         "price": 800,
+         "discount": 0,
          "tag": [
-            "etiqueta2",
-            "etiqueta3",
-            "etiqueta4"
+            "otaku",
+            "cerezo",
+            "manga"
          ],
          "category": "Buzos"
       },
       {
-         "photo": "Charizard.png",
-         "name": "Charizard2",
-         "price": 500,
+         "id": 6,
+         "photo": "sailor.png",
+         "name": "SailorMoon",
+         "price": 800,
+         "discount": 0,
          "tag": [
-            "etiqueta5",
-            "etiqueta6",
-            "etiqueta7"
+            "girl",
+            "anime",
+            "magicKids"
+         ],
+         "category": "Buzos"
+      },
+      {
+         "photo": "productDefault.png",
+         "name": "Pikapika",
+         "price": "500",
+         "discount": "2",
+         "tag": [
+            "Abrigo",
+            "Cualquiera",
+            "Invierno"
          ],
          "category": "Buzos"
       }
    ],
    "Gorros": [
       {
-         "photo": "thisIsFine.png",
-         "name": "thisIsFine2",
+         "id": 7,
+         "photo": "korn.png",
+         "name": "Korn",
          "price": 500,
+         "discount": 0,
          "tag": [
-            "etiqueta1",
-            "etiqueta2",
-            "etiqueta3"
+            "metal",
+            "musica",
+            "dosmils"
          ],
          "category": "Gorros"
       },
       {
-         "photo": "CriminalGirl.png",
-         "name": "CriminalGirl2",
+         "id": 8,
+         "photo": "metal.png",
+         "name": "Metal",
          "price": 500,
+         "discount": 0,
          "tag": [
-            "etiqueta2",
-            "etiqueta3",
-            "etiqueta4"
+            "metal",
+            "musica",
+            "genero"
          ],
          "category": "Gorros"
       },
       {
-         "photo": "Charizard.png",
-         "name": "Charizard2",
+         "id": 9,
+         "photo": "naruto.png",
+         "name": "Naruto",
          "price": 500,
+         "discount": 0,
          "tag": [
-            "etiqueta5",
-            "etiqueta6",
-            "etiqueta7"
+            "anime",
+            "naruto",
+            "abrigo"
          ],
          "category": "Gorros"
       }
    ],
    "Posters": [
       {
-         "photo": "thisIsFine.png",
-         "name": "thisIsFine2",
+         "id": 10,
+         "photo": "escudo.png",
+         "name": "Escudo",
          "price": 400,
+         "discount": 0,
          "tag": [
-            "etiqueta1",
-            "etiqueta2",
-            "etiqueta3"
+            "Belgrano",
+            "equipo",
+            "dorama"
          ],
          "category": "Posters"
       },
       {
-         "photo": "CriminalGirl.png",
-         "name": "CriminalGirl2",
+         "id": 11,
+         "photo": "barrio.png",
+         "name": "Barrio",
          "price": 400,
+         "discount": 0,
          "tag": [
-            "etiqueta2",
-            "etiqueta3",
-            "etiqueta4"
+            "mapa",
+            "BsAs",
+            "lugar"
          ],
          "category": "Posters"
       },
       {
-         "photo": "Charizard.png",
-         "name": "Charizard2",
+         "id": 12,
+         "photo": "procer.png",
+         "name": "Procer",
          "price": 400,
+         "discount": 0,
          "tag": [
-            "etiqueta5",
-            "etiqueta6",
-            "etiqueta7"
+            "Argentina",
+            "reliquia",
+            "historia"
          ],
          "category": "Posters"
       }
