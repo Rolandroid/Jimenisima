@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const {index, dashboard} = require('../controllers/indexController')
+const {index, dashboard} = require('../controllers/IndexController')
 
 /* app.use '/' */
 router

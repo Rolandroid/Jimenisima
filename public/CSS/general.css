@@ -7,3 +7,14 @@
     text-decoration: none;
     list-style: none;
 }
+body {
+    min-height: 100vh;
+    background: linear-gradient(to top, var(--secundary-color), var(--primary-color));
+}
+main {
+    padding: 10px;
+}
+.mainPage {
+    background: linear-gradient(to bottom, var(--secundary-color), var(--primary-color));
+
+}

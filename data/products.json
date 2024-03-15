@@ -4,6 +4,7 @@
       "photo": "thisIsFine.png",
       "name": "thisIsFine",
       "price": 300,
+      "stock":10,
       "tag": [
         "etiqueta1",
         "etiqueta2",
@@ -15,6 +16,7 @@
       "photo": "CriminalGirl.png",
       "name": "CriminalGirl",
       "price": 300,
+      "stock":10,
       "tag": [
         "etiqueta2",
         "etiqueta3",
@@ -26,6 +28,7 @@
       "photo": "Charizard.png",
       "name": "Charizard",
       "price": 300,
+      "stock":10,
       "tag": [
         "etiqueta5",
         "etiqueta6",
@@ -39,6 +42,7 @@
       "photo": "thisIsFine.png",
       "name": "thisIsFine2",
       "price": 500,
+      "stock":10,
       "tag": [
         "etiqueta1",
         "etiqueta2",
@@ -50,6 +54,7 @@
       "photo": "CriminalGirl.png",
       "name": "CriminalGirl2",
       "price": 500,
+      "stock":10,
       "tag": [
         "etiqueta2",
         "etiqueta3",
@@ -61,6 +66,7 @@
       "photo": "Charizard.png",
       "name": "Charizard2",
       "price": 500,
+      "stock":10,
       "tag": [
         "etiqueta5",
         "etiqueta6",
@@ -74,6 +80,7 @@
       "photo": "thisIsFine.png",
       "name": "thisIsFine2",
       "price": 500,
+      "stock":10,
       "tag": [
         "etiqueta1",
         "etiqueta2",
@@ -85,6 +92,7 @@
       "photo": "CriminalGirl.png",
       "name": "CriminalGirl2",
       "price": 500,
+      "stock":10,
       "tag": [
         "etiqueta2",
         "etiqueta3",
@@ -96,6 +104,7 @@
       "photo": "Charizard.png",
       "name": "Charizard2",
       "price": 500,
+      "stock":10,
       "tag": [
         "etiqueta5",
         "etiqueta6",
@@ -109,6 +118,7 @@
       "photo": "thisIsFine.png",
       "name": "thisIsFine2",
       "price": 400,
+      "stock":10,
       "tag": [
         "etiqueta1",
         "etiqueta2",
@@ -120,6 +130,7 @@
       "photo": "CriminalGirl.png",
       "name": "CriminalGirl2",
       "price": 400,
+      "stock":10,
       "tag": [
         "etiqueta2",
         "etiqueta3",
@@ -131,6 +142,7 @@
       "photo": "Charizard.png",
       "name": "Charizard2",
       "price": 400,
+      "stock":10,
       "tag": [
         "etiqueta5",
         "etiqueta6",

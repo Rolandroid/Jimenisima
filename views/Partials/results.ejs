@@ -1,14 +1,14 @@
-<div class="resultsContainer">
-    <ul class="searchesList">
+<div class="results-container">
+    <ul class="searches-ul">
         <% products.forEach(element => { %>
             <% for( let index = 0; index < element.tag.length; index++ ) { %>
-                <li class="searchesItem"><p class="searchesTerm"><%=  element.tag[index] %></p><button class="searchesTermDelete">x</button></li> 
+                <li class="searches-ul-li"><p class="searches-ul-li-p"><%=  element.tag[index] %></p><button class="searches-ul-li-button">x</button></li> 
                 
             <% } %>      
         <% }) %>
           
     </ul>
-    <div class="resultsList">
+    <div class="results-div">
         <% products.forEach(element => { %>
             <%- include('article',{element}) %>         
         <% }) %>

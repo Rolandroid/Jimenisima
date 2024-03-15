@@ -1,4 +1,4 @@
-.formularyMain{
+.formulary-main{
     background-color: var(--background-color);
     height: 60vh;
     display: flex;
@@ -7,16 +7,7 @@
     align-items: center;
     justify-content: center;
 }
-.formularyMain{
-    background-color: var(--background-color);
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-}
-.formularyForm{
+.formulary-form{
     background-color: var(--primary-color);
     width: 300px;
     display: flex;
@@ -24,21 +15,21 @@
     flex-direction: column;
     align-items: flex-end;
 }
-.formularyInput{
+.formulary-form-label-input{
     background-color: var(--background-color);
 --font-color: var(
     --primary-color);
     padding: 3px;
 }
-.formularyLabel{padding: 6px 6px 0px 6px;}
+.formulary-form-label{padding: 6px 6px 0px 6px;}
 .formularyLabel2{font-size: x-small;padding: 6px 6px 0px 6px;}
-.formularyButton{
+.formulary-form-button{
     font-size: large;
     width: 100%;
     background-color: var(--secundary-color);
     margin: 6px 0px 0px 0px;
 }
-.formularyHref{
+.formulary-a{
     text-align: center;
     width: 300px;
     background-color: var(--secundary-color);

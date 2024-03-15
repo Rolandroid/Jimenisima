@@ -5,8 +5,13 @@
   <%- include('./partials/head') %>
   <body>
     <%- include('./partials/header',) %>
-    <%- include('./partials/navbar', {categoriesList : categoriesList}) %>
-    <%- include('./partials/banner',) %>
-    <%- include('./partials/highlight',{recommended : recommended}) %>
+    <main>
+      <%- include('./partials/navbar', {categoriesList : categoriesList}) %>
+      <div class="mainPage">
+        <%- include('./partials/previews',{recommended : recommended}) %>
+        <%- include('./partials/highlight',{recommended : recommended}) %>
+      </div>
+      <%- include('./partials/banner',) %>
+    </main>
     <%- include('./partials/footer',) %>
   </body>

@@ -1,37 +1,38 @@
-.divBanner{
+.div-banner{
     min-height: 95px;
     display: flex;
     padding: 6px;
-    background-color: var(--primary-color);
-    justify-content: space-between;
+    margin: 6px 0px;
+    background-color: var(--terciary-color);
+    justify-content: space-evenly;
     align-items: center;
 }
-.divBannerIcon{font-size: -webkit-xxx-large;display: inline;}
-.divBannerText{
+.div-banner-icon{font-size: -webkit-xxx-large;display: inline;}
+.div-banner-text{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.divBannerTextSpan{
+.div-banner-text-span{
     font-size: larger;
     align-content: center;
 }
-.divBannerTextP{text-align: center;font-size: small;}
+.div-banner-text-p{text-align: center;font-size: small;}
 
 
 @media(width <= 320px){
-    .divBanner{}
-    .divBannerIcon{}
-    .divBannerTextSpan{
+    .div-banner{}
+    .div-banner-icon{}
+    .div-banner-text-span{
         display: none;
     }
-    .divBannerTextP{
+    .div-banner-text-p{
         display: none;
     }
 }
 
 @media(width <= 768px){
-    .divBannerTextP{
+    .div-banner-text-p{
         display: none;
     }
 }

@@ -1,4 +1,4 @@
-.productCard{
+.product-card{
     display: flex;
     gap: 6px;
     padding: 6px;
@@ -10,7 +10,7 @@
     justify-content: space-evenly;
     overflow: hidden;
 }
-.imageContainer{
+.image-container{
     width: 120px;
     height: 153px;
     display: flex;
@@ -18,17 +18,17 @@
     justify-content: center;
 }
 
-.productImage{
+.product-image{
     max-width: 120px;
     max-height: 120px;
 }
-.productName{
+.product-name{
     font-size: small;
 }
-.productprice{
+.product-price{
     font-size: large;
 }
-.addToCartButton{
+.addToCart-button{
     width: 26px;
     height: 26px;
     border-radius: 13px;

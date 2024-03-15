@@ -1,10 +1,16 @@
-.highlightContainer{
-    /* margin: 6px 0px 0px 0px; */
-    background-color: var(--background-color);
+.highlight-container{
 }
 
-.highlightTitle{
-    background-color: var(--secundary-color);
+.highlight-p{
     padding: 6px;
     font-size: larger;
 }
+.highlight-p-i{}
+.highlight-ul{
+    display: flex;
+    padding: 6px;
+    gap: 6px;
+    /* overflow: scroll; */
+    flex-wrap: wrap;
+}
+.highlight-ul-li{}

@@ -1,26 +1,35 @@
-<header class="jimenisimaHeader">
-    <div class="userIngressDiv">
-        <div class="GoogleAuthImgContainer">
-            <div class="GoogleAuthContent">
-                <a class="GoogleAuthRoute" href="" class="GoogleAuthContentPath">
-                    Ingresar con Google
-                </a>
-            </div>
-            <img src="/images/assets/userDefault.png" alt="ingreso con google" class="userDefaultImg">
+<header class="Jimenisima-header">
+
+
+    <a class="home-path" href="/">
+        <img src="/images/assets/jimenisimaLogo.png" alt="Jimenisima" class="logo-img">
+    </a>
+
+    <form class="search-form" name="searchForm" method="GET">
+        <input autofocus class="form-input" name="serchInput" type="text" placeholder="Busca en Jimenisima">
+        <button class="form-button" name="serchSubmit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+
+    <div class="user-ingress-div">
+        <div class="google-auth-img-container">
+            <img src="/images/assets/userDefault.png" alt="ingreso con google" class="user-default-img">
         </div>
-            <div class="userIngressOptionsDiv">
-            <a class="loginPath" href="/users/login">
-                <span class="loginText">Iniciar Sesion</span>
+        <div class="user-ingress-options-div">
+            <a class="login-path" href="/users/login">
+                <span class="login-text">Inicia Sesion</span>
             </a>
             <a class="registerPath" href="/users/register">
-                <span class="registerText">Crear cuenta
+                <span class="register-text">Crea tu cuenta
+                </span>
+            </a>
+            <a class="register-path" href="/users/register">
+                <span class="register-text">Ingresa con Google
                 </span>
             </a>
         </div>
     </div>
-    
-        <a class="HomePath" href="/">
-            <img src="/images/assets/jimenisimaLogo.png" alt="Jimenisima" class="logoImg">
-        </a>
-   
+
+
+
 </header>

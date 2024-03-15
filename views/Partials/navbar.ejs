@@ -1,14 +1,11 @@
-<nav class="jimenisimaNavbar">
-    <div class ="categoriesListRibbon">
-        <ul class="categoriesList">
+<nav class="Jimenisima-navbar">
+    <div class ="categories-list-ribbon">
+        <ul class="categories-list">
+            <li class="selected-categorie-item"><%= "Todo" %></li>
             <%  for( let i = 0; i < categoriesList.length; i++ ) { %>
-                <li class="categorieItem"><%= categoriesList[i] %></li>
+                <li class="unselected-categorie-item"><%= categoriesList[i] %></li>
             <% } %>
         </ul>
     </div>
-    <form class="searchForm" name="searchForm" method="GET">
-        <input autofocus class="formInput" name="serchInput" type="text" placeholder="Busca en Jimenisima">
-        <button class="formButton" name="serchSubmit"><i class="fa-solid fa-magnifying-glass"></i></button>
-
-    </form>
+    
 </nav>

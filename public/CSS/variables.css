@@ -1,8 +1,8 @@
 :root {
-    --primary-color: deepskyblue;
-    --secundary-color: steelblue;
-    --font-color: black;
+    --primary-color: #ff8bd0;
+    --secundary-color: #ffea36;
+    --terciary-color: #9370DB;
+    --secundary-font-color: black;
+    --primary-font-color: black;
     --background-color: black;
 }
-
-/*  var(--primary-color) */

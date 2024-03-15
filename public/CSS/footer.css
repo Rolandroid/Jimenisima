@@ -1,41 +1,41 @@
-.JimenisimaFooter{
-    background: var(--primary-color);
+.Jimenisima-footer{
+    
 }
-.commentBox{
+.comment-box{
     padding: 6px;
     display: flex;
     gap: 6px;
     justify-content: space-between;
 }
-.infoBox{
+.info-box{
     display: flex;
     padding: 6px;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 12px;
 }
-.commentInputBox{
+.comment-inputBox{
     display: flex;
     gap: 6px;
     flex-direction: column;
 }
-.commentInputTitle{}
-.commentInputName{}
-.commentInputContent{}
-.footerSection{
+.comment-input-title{}
+.comment-input-name{}
+.comment-input-content{}
+.footer-section{
     width: 211px;
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
 }
-.footerSectionTitle{
+.footer-section-title{
     /* padding: 0px 0px 0px 6px; */
     font-size: larger;
 }
-.footerSectionListItem{}
-.footerSectionListItemItem{}
-.footerSectionList{font-size:medium;}
-.footerCredits{
+.footer-section-list-item{}
+.footer-section-list-item-item{}
+.footer-section-list{font-size:medium;}
+.footer-credits{
     display: flex;
     justify-content: center;
     font-size: x-small;
@@ -43,11 +43,11 @@
 }
 
 @media(width < 320px){
-     .footerSectionList{font-size: x-small;}
+     .footer-section-list{font-size: x-small;}
 }
 
 @media(width <= 768px){
-    .infoBox{
+    .info-box{
   justify-content: flex-start;
   }
 

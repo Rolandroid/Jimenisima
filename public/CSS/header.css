@@ -1,48 +1,76 @@
-.jimenisimaHeader{
+.Jimenisima-header{
     padding: 6px;
-    background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-.userIngressDiv{
+.search-form{
     display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px;
 }
-.userIngressOptionsDiv{
+.form-input{
+    border-radius: 40px;
+    padding: 2px 6px;
+}
+.form-input{
+    font-size: large;
+    width: 200px;
+}
+.form-button{
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    background: linear-gradient(to top, var(--secundary-color), var(--primary-color));
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.3);
+}
+.user-ingress-div{
+    display: flex;
+    margin-left: auto;
+}
+.user-ingress-options-div{
     padding-top: 12px;
     width: 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}.GoogleAuthImgContainer {
+}.google-authImg-container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.GoogleAuthContent {
+.-google-auth-content {
     position: absolute;
     padding: 10px;
     text-align: center;
     text-decoration: none;
 }
 
-.GoogleAuthRoute {font-size: xx-small;}
+.-google-auth-route {font-size: xx-small;}
 
-.userDefaultImg {
+.user-default-img {
     border: 1px solid gray;
     width: 80px;
     border-radius: 40px;
 }
-.GoogleAuthContentPath{}
-.loginPath{}
-.loginText{
+.google-auth-content-path{}
+.login-path{}
+.login-text{
     font-size: large;
 }
-.registerText{
+.register-text{
     font-size: small;
 }
-.registerPath{}
-.logoImg{}
-.HomePath{}
-.logoImg{width: 80px;}
+.register-path{}
+.logo-img{}
+.home-path{}
+.logo-img{width: 80px;}
+
+@media(width <= 560px){
+    .search-form {
+        order: 2; /* Cambia el orden del formulario de búsqueda para que se vaya a la izquierda */
+      }
+}

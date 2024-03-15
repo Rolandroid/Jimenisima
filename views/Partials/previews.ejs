@@ -1,0 +1,7 @@
+<div class="preview-container">
+   <ul class="previews-ul">
+        <% recommended.forEach(element => { %>
+         <li class="previews-ul-li" ><%- include('./article',{element : element}) %></li>
+        <% }) %>        
+    </ul>
+</div>
