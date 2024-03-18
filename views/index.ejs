@@ -6,12 +6,12 @@
   <body>
     <%- include('./partials/header',) %>
     <main>
-      <%- include('./partials/navbar', {categoriesList : categoriesList}) %>
-      <div class="mainPage">
+      <div class="main-page">
+        <%- include('./partials/navbar', {categoriesList : categoriesList}) %>
         <%- include('./partials/previews',{recommended : recommended}) %>
         <%- include('./partials/highlight',{recommended : recommended}) %>
       </div>
-      <%- include('./partials/banner',) %>
     </main>
+    <%- include('./partials/banner',) %>
     <%- include('./partials/footer',) %>
   </body>

@@ -4,13 +4,20 @@
 .highlight-p{
     padding: 6px;
     font-size: larger;
+    background-color: var(--terciary-color);
+
 }
 .highlight-p-i{}
 .highlight-ul{
     display: flex;
     padding: 6px;
     gap: 6px;
-    /* overflow: scroll; */
-    flex-wrap: wrap;
+    overflow: scroll;
+    overflow-y: hidden;
 }
+.highlight-ul::-webkit-scrollbar-track {
+    background: transparent;
+
+  }
+
 .highlight-ul-li{}

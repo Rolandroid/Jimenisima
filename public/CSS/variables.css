@@ -1,7 +1,8 @@
 :root {
     --primary-color: #ff8bd0;
     --secundary-color: #ffea36;
-    --terciary-color: #9370DB;
+    --terciary-color: #9370DB;  
+    --categories-background-color: #ff97bd;
     --secundary-font-color: black;
     --primary-font-color: black;
     --background-color: black;

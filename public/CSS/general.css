@@ -14,7 +14,33 @@ body {
 main {
     padding: 10px;
 }
-.mainPage {
+.main-page {
     background: linear-gradient(to bottom, var(--secundary-color), var(--primary-color));
+}  
+  /* Personaliza la apariencia de la barra de desplazamiento en navegadores webkit */
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 5px; /* Ancho de la barra de desplazamiento */
+    border: 1px solid transparent;
+    margin-top: 1px; /* Espaciado superior */
+    margin-bottom: 1px; /* Espaciado inferior */
+    margin-left: auto; /* Centra el thumb horizontalmente */
+    margin-right: auto; /* Centra el thumb horizontalmente */
+  }
+  
+  /* Estiliza el contenedor de la barra de desplazamiento */
+  ::-webkit-scrollbar-track {
+    background: var(--secundary-color);
+    height: 5px;
 
-}
+  }
+  
+  /* Estiliza el control deslizante de la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb {
+    background: var(--terciary-color);
+    height: 5px;
+    border-radius: 5px;
+   
+  } 
+  
+  

@@ -73,6 +73,29 @@
         "etiqueta7"
       ],
       "category": "Stickers"
+    },{
+      "photo": "CriminalGirl.png",
+      "name": "CriminalGirl2",
+      "price": 500,
+      "stock":10,
+      "tag": [
+        "etiqueta2",
+        "etiqueta3",
+        "etiqueta4"
+      ],
+      "category": "Stickers"
+    },
+    {
+      "photo": "CriminalGirl.png",
+      "name": "CriminalGirl2",
+      "price": 500,
+      "stock":10,
+      "tag": [
+        "etiqueta2",
+        "etiqueta3",
+        "etiqueta4"
+      ],
+      "category": "Stickers"
     }
   ],
   "Gorros": [

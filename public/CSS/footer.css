@@ -48,7 +48,7 @@
 
 @media(width <= 768px){
     .info-box{
-  justify-content: flex-start;
+            flex-direction: column;
   }
 
 }
