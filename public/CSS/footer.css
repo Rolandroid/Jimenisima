@@ -46,7 +46,7 @@
      .footer-section-list{font-size: x-small;}
 }
 
-@media(width <= 768px){
+@media(width <= 520px){
     .info-box{
             flex-direction: column;
   }
